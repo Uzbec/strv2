@@ -25,22 +25,4 @@ def ft_reverse_between_char(char, str):
         if not pin:
             return -1
         else:
-            if gpin == 0 and svch == l.ft_len(str) - 1:
-                return rev.ft_reverse_str(str)
-            elif gpin == 0:
-                return rev.ft_reverse_str(sl.ft_slice_str(str, 1, svch + 1)) \
-                       + sl.ft_slice_str(str, svch + 2, l.ft_len(str))
-
-            elif svch == l.ft_len(str) - 1:
-                return sl.ft_slice_str(str, 1, gpin) + rev.ft_reverse_str(
-                    sl.ft_slice_str(str, gpin + 1, l.ft_len(str)))
-            else:
-                nac = ""
-                con = ""
-                for i in range(gpin):
-                    nac += str[i]
-                for i in range(svch + 1, l.ft_len(str)):
-                    con += str[i]
-                return nac + rev.ft_reverse_str(sl.ft_slice_str(str, gpin + 1,
-                                                                svch + 1)) + \
-                       con
+            return rev.ft_reverse_str(sl.ft_slice_str(str, gpin + 1, svch + 1))
