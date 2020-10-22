@@ -1,6 +1,6 @@
-import ft_len as l
-import ft_reverse_str as rev
-import ft_slice_str as sl
+from . import ft_len as l
+from . import ft_reverse_str as rev
+from . import ft_slice_str as sl
 
 
 def ft_reverse_between_char(char, str):
