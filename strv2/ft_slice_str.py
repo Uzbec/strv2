@@ -1,4 +1,4 @@
-from . import ft_len as l
+import ft_len as l
 
 
 def ft_slice_str(str, start, end):

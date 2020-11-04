@@ -1,4 +1,4 @@
-from . import ft_len as l
+import ft_len as l
 
 
 def ft_find_second_char(char, str):

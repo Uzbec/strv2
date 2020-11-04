@@ -1,4 +1,4 @@
-from . import ft_len as l
+import ft_len as l
 
 
 def ft_remove_str(str1, str2):
