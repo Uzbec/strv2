@@ -1,5 +1,5 @@
-import ft_lshift_list as l
-import ft_rshift_list as r
+from . import ft_lshift_list as l
+from . import ft_rshift_list as r
 
 
 def ft_super_shift_list(mass, n):

@@ -1,4 +1,4 @@
-import ft_len as l
+from . import ft_len as l
 
 
 def ft_even_parts_list(mass):
