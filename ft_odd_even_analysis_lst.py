@@ -1,5 +1,5 @@
-import ft_odd_even_separator_lst as k
-import ft_max_min_sum_count as mms
+from . import ft_odd_even_separator_lst as k
+from . import ft_max_min_sum_count as mms
 
 
 def ft_odd_even_analysis_lst(lst):
@@ -13,11 +13,9 @@ def ft_odd_even_analysis_lst(lst):
     minech = mms.ft_max_min_sum_count(nech)[2]
     sch = mms.ft_max_min_sum_count(ch)[3]
     snch = mms.ft_max_min_sum_count(nech)[3]
-    otv = f"Анализ списка:\nКоличество четных чисел: {s},\t\t" \
-          f"Количество нечетных чисел: {knech}" \
-          f"\nМаксимальная четная " \
-          f"цифра: {mch},\t\tМаксимальная нечетная цифра: {mnech}," \
-          f"\nМинимальная четная цифра: {mich},\t\tМинимальная нечетная " \
-          f"цифра: {minech},\nСумма четных чисел: {sch},\t\tСумма нечетных " \
-          f"чисел: {snch},"
-    print(otv, end="\n")
+    otv = f"""Анализ списка:
+Количество четных чисел: {s},\t\tКоличество нечетных чисел: {knech}
+Максимальная четная цифра: {mch},\t\tМаксимальная нечетная цифра: {mnech},
+Минимальная четная цифра: {mich},\t\tМинимальная нечетная цифра: {minech},
+Сумма четных чисел: {sch},\t\tСумма нечетных чисел: {snch},"""
+    print(otv)
